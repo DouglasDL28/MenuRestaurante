@@ -3,6 +3,7 @@
           package="com.example.douglasdeleon.menurestaurante">
 
     <application
+            android:name=".Logic.Application"
             android:allowBackup="true"
             android:icon="@mipmap/ic_launcher"
             android:label="@string/app_name"

@@ -13,7 +13,8 @@
             app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="8dp" app:layout_constraintVertical_bias="0.368"/>
+            android:layout_marginStart="8dp" app:layout_constraintVertical_bias="0.368"
+            android:id="@+id/orderListView"/>
     <Button
             android:text="LIMPIAR PEDIDO"
             android:layout_width="wrap_content"
@@ -23,7 +24,7 @@
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="8dp" app:layout_constraintHorizontal_bias="0.185"
-            app:layout_constraintVertical_bias="0.829"/>
+            app:layout_constraintVertical_bias="0.829" android:onClick="onClick_clearButton"/>
     <Button
             android:text="HACER PEDIDO"
             android:layout_width="wrap_content"
@@ -32,7 +33,8 @@
             app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.829"
             android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="8dp"
-            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.814"/>
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.814"
+            android:onClick="onClick_orderButton"/>
     <Button
             android:text="INICIO"
             android:layout_width="wrap_content"
@@ -41,10 +43,10 @@
             app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
-            app:layout_constraintVertical_bias="0.961"/>
+            app:layout_constraintVertical_bias="0.961" android:onClick="onClick_homeButton"/>
     <TextView
             android:text="PEDIDO"
-            android:layout_width="85dp"
+            android:layout_width="104dp"
             android:layout_height="40dp"
             android:id="@+id/textView3" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
