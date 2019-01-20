@@ -24,7 +24,7 @@ class MenuActivity : AppCompatActivity(){
     fun onClick_homeButton(view: View) {
         val intent = Intent(this@MenuActivity, MainActivity::class.java)
         application.startActivity(intent)
-    }
+    } //Botón para regresar al inicio.
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -32,7 +32,7 @@ class MenuActivity : AppCompatActivity(){
 
         val listView: ListView = findViewById(R.id.menuListView)
 
-        val adapter = ArrayAdapter(this@MenuActivity, R.layout.listview_item, list)
+        val adapter = ArrayAdapter(this@MenuActivity, R.layout.listview_item, list) //Conexión del listView y el adapter para mostrar la lista.
 
         listView.adapter = adapter
 
@@ -43,6 +43,6 @@ class MenuActivity : AppCompatActivity(){
             menu.add(item)
 
             listView.adapter = adapter
-        }
+        } //Al hacer click, agrega el item seleccionado al MenuOrder.
     }
 }
